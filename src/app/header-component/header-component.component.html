@@ -1,0 +1,16 @@
+<mat-toolbar role="heading">
+    <button mat-icon-button (click)="clickMenu()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <img src="../../assets/download.svg" width="200px" alt="logo" > 
+
+    <span class="spacer"></span> <!-- Add a spacer to create space between logo and icons -->
+  <button mat-icon-button>
+    <mat-icon>help</mat-icon>
+  </button>
+  <button mat-icon-button>
+    <mat-icon>notifications</mat-icon>
+  </button>
+    <h1 appProfile [roundedCircleText]="'vijay'" (click)="logout()"></h1>
+</mat-toolbar>
+  

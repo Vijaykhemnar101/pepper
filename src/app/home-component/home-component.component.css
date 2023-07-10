@@ -1,0 +1,55 @@
+.app-drawer-container {
+    flex: 1;
+    margin-top: 0px;
+}
+
+.app-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.mat-drawer{
+    margin-top: 0px;
+    border-top: 2px solid #9D9D9D;
+    width: 240px;
+}
+
+.custom-action-list {
+    margin-top: 0;
+}
+
+.custom-list-item {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.custom-icon {
+    margin-right: 8px;
+    vertical-align: middle;
+    fill: none;
+    stroke: black;
+    stroke-width: 2px;
+}
+
+.custom-text {
+    margin: 0;
+    vertical-align: middle;
+
+}
+
+.selected{
+    border-left: 5px solid #DF0024;
+    background-color: #c6BAC6;
+}
+
+.app-wrapper {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 64px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }

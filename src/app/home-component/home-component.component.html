@@ -1,0 +1,29 @@
+
+
+
+
+<app-header-component></app-header-component>
+
+<div class="app-wrapper">
+    
+    <mat-sidenav-container class='app-drawer-container' fullscreen>
+        <mat-sidenav #sidenav mode="side">
+            <mat-action-list class="custom-action-list">
+                <button mat-list-item class="custom-list-item" [ngClass]="{isSelected} ? 'selected':'' " [routerLink]="'/home/feedback'">
+                  <mat-icon class="custom-icon">home</mat-icon>
+                  <span class="custom-text">Home</span>
+                </button>
+                <!-- <button mat-list-item class="custom-list-item">
+                  <span class="custom-text">Undo</span>
+                </button> -->
+              </mat-action-list>
+              
+        </mat-sidenav>
+        <mat-sidenav-content>
+          <!-- <button mat-button (click)="sidenav.toggle()">Main content</button>
+          <button mat-button >Main content</button> -->
+            <router-outlet></router-outlet>
+        </mat-sidenav-content>
+      </mat-sidenav-container>
+<div>
+

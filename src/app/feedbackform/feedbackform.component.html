@@ -1,0 +1,21 @@
+<div class="home">
+   
+    <p class="title"> Add New Feedback </p>
+    <p class="name"> Feedback Form </p>
+    
+    <form #myform="ngForm" (ngSubmit)="onSubmit(myform)">
+        <label for="feedback">Feedback Input</label>
+        <small *ngIf="feedback.invalid && feedback.touched " >Feedback message is required <br> </small>
+        <textarea id="feedback" name="feedback_message" ngModel required #feedback="ngModel" placeholder="Lorum Ipsum"></textarea>
+        <label for="message">Rating:</label>
+        <app-feedback-star [rating]="rating"  [starCount]="starCount" (ratingUpdated)="onRatingChanged($event)"></app-feedback-star>
+
+        <div class="buttons">
+            <button mat-raised-button [routerLink]="'/home/feedback'" style="border: 1px solid #411941;color:#411941;margin-right:2%">Back</button>
+            <button mat-raised-button [disabled]="!myform.valid" style="background-color: #411941;color: #FFFFFF;">Submit Form</button>
+        </div>
+      </form>
+    
+</div>
+
+

@@ -1,0 +1,7 @@
+<div style="display: flex;">
+  <button style="white-space: nowrap; padding: 0; width: 30px;" mat-icon-button class="buttoncolour" *ngFor="let ratingId of ratingArr; index as i" [id]="'star_'+i" (click)="onClick(i+1)" matTooltipPosition="above">
+    <mat-icon>
+      {{showIcon(i)}}
+    </mat-icon>
+  </button>
+</div>
